@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # ~/
-ln -sv ~/Dotfiles/.xmonad ~
-ln -sv ~/Dotfiels/.zshrc ~
+ln -sv ~/dotfiles/.xmonad ~
+ln -sv ~/dotfiles/.zshrc ~
 
 # ~/.config
-ln -sv ~/Dotfiles/alacritty ~/.config
-ln -sv ~/Dotfiles/nvim ~/.config
+ln -sv ~/dotfiles/alacritty ~/.config
+ln -sv ~/dotfiles/nvim ~/.config
