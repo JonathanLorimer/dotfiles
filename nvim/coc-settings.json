@@ -1,43 +1,9 @@
 {
-  "languageserver": {
-    "haskell": {
-      "command": "stack",
-      "args": [
-        "exec",
-        "ghcide",
-        "--",
-        "--lsp"
-      ],
-      "rootPatterns": [
-        ".stack.yaml",
-        "cabal.config",
-        "package.yaml"
-      ],
-      "filetypes": [
-        "hs",
-        "lhs",
-        "haskell"
-      ],
-      "initializationOptions": {
-        "languageServerHaskell": {
-          "hlintOn": false,
-          "maxNumberOfProblems": 10,
-          "completionSnippetsOn": false
-        }
-      }
-    },
-    "purescript": {
-      "command": "purescript-language-server",
-      "args": ["--stdio"],
-      "filetypes": ["purescript"],
-      "rootPatterns": ["bower.json", "psc-package.json", "spago.dhall"]
-    }
-  },
-  "coc.preferences.rootPatterns":[".git", "package.yaml", "*.cabal"],
-  "snippets.ultisnips.directories": [
-    "~/.config/nvim/"
-  ],
-  "yank.enableCompletion": false,
-  "coc.preferences.hoverTarget": "float",
-  "list.source.files.command": "fd"
+  "suggest.echodocSupport": true,
+  "suggest.maxCompleteItemCount": 20,
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "json", "javascriptreact", "typescript.tsx"],
+  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
+  "diagnostic.errorSign": "•",
+  "diagnostic.warningSign": "•",
+  "diagnostic.infoSign": "•"
 }
