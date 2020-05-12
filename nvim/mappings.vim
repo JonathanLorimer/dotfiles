@@ -23,8 +23,8 @@ nnoremap <leader>l gt
 nnoremap <leader>tt :RangerNewTab<CR>
 
 " FZF
-nnoremap fzt :Lines<CR>
-nnoremap fzb :BLines<CR>
-nnoremap fzf :Files<CR>
-nnoremap fzg :GFiles?<CR>
+nnoremap <leader>rg :Rg<CR>
+nnoremap <leader>zt :Tags<CR>
+nnoremap <leader>zf :Files<CR>
+nnoremap <leader>zb :Buffers<CR>
 

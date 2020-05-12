@@ -11,6 +11,7 @@ set cursorline
 " ===================================================
 
 
+
 " Ranger
 let g:ranger_replace_netrw = 1 "open ranger when vim open a directory
 
@@ -36,3 +37,4 @@ filetype plugin indent on
 
 " FZF
 let g:fzg_buffers_jump = 1
+let g:fzf_tags_command = 'ctags -R'

@@ -37,10 +37,6 @@ nmap <silent> gr <Plug>(coc-references)
 "" Highlight symbol under cursor hold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-"" Format code
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
-
 " Format Buffer
 command! -nargs=0 Format :call CocAction('format')
 

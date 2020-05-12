@@ -5,6 +5,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'rhysd/conflict-marker.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim' "Peer dependency of ranger
 Plug 'vim-airline/vim-airline'
@@ -13,6 +14,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'scrooloose/syntastic'
 Plug 'arcticicestudio/nord-vim'
+Plug 'liuchengxu/vim-which-key'
 
 " Git
 Plug 'tpope/vim-fugitive'
