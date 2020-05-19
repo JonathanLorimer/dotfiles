@@ -31,6 +31,9 @@ filetype plugin indent on
 
 " Plugins
 
+" Don't let plugins map leader bindings
+let g:no_plugin_maps = 1
+
 " Signify
 let g:signify_sign_add               = '+'
 let g:signify_sign_delete            = '_'
