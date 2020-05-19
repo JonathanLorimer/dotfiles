@@ -28,3 +28,5 @@ nnoremap <leader>zt :Tags<CR>
 nnoremap <leader>zf :Files<CR>
 nnoremap <leader>zb :Buffers<CR>
 
+" Tagbar
+nnoremap <leader>tg :TagbarToggle<CR>

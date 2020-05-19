@@ -15,6 +15,7 @@ Plug 'tpope/vim-commentary'
 Plug 'scrooloose/syntastic'
 Plug 'arcticicestudio/nord-vim'
 Plug 'liuchengxu/vim-which-key'
+Plug 'majutsushi/tagbar'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -28,6 +29,8 @@ Plug 'LnL7/vim-nix'
 
 " Haskell
 Plug 'neovimhaskell/haskell-vim'
+Plug 'alx741/yesod.vim'
+let g:yesod_handlers_directories = ['src']
 
 " TS
 Plug 'leafgarland/typescript-vim'

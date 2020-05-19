@@ -6,12 +6,6 @@ set pumheight=10
 set ruler
 set cursorline
 
-" ====================================================
-" Navigation
-" ===================================================
-
-
-
 " Ranger
 let g:ranger_replace_netrw = 1 "open ranger when vim open a directory
 
