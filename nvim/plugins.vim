@@ -19,6 +19,9 @@ Plug 'majutsushi/tagbar'
 
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
 
 " LSP
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
@@ -35,5 +38,8 @@ let g:yesod_handlers_directories = ['src']
 " TS
 Plug 'leafgarland/typescript-vim'
 Plug 'ianks/vim-tsx'
+
+" uolorizer
+Plug 'norcalli/nvim-colorizer.lua'
 
 call plug#end()

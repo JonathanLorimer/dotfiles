@@ -30,3 +30,8 @@ nnoremap <leader>zb :Buffers<CR>
 
 " Tagbar
 nnoremap <leader>tg :TagbarToggle<CR>
+
+" SIgnify
+nmap <leader>gj <plug>(signify-next-hunk)
+nmap <leader>gk <plug>(signify-prev-hunk)
+nmap <leader>gh :SignifyToggleHighlight<CR>

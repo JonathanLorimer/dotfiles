@@ -29,6 +29,18 @@ set nocompatible
 set backspace=indent,eol,start
 filetype plugin indent on
 
+" Plugins
+
+" Signify
+let g:signify_sign_add               = '+'
+let g:signify_sign_delete            = '_'
+let g:signify_sign_delete_first_line = '‾'
+let g:signify_sign_change            = '~'
+
+let g:signify_sign_show_count = 0
+let g:signify_sign_show_text = 1
+
+
 " FZF
 let g:fzg_buffers_jump = 1
 let g:fzf_tags_command = 'ctags -R'
