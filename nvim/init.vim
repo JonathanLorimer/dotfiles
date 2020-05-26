@@ -61,7 +61,6 @@ let g:haskell_indent_let = 4
 let g:haskell_indent_case = 2
 let g:haskell_indent_where = 6
 
-au filetype haskell nnoremap <silent> <leader>p :let a='{-# LANGUAGE  #-}'\|put! = a <cr> l11 <Insert>
 
 autocmd FileType haskell setlocal commentstring=--\ %s
 

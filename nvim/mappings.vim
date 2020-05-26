@@ -18,7 +18,6 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
 let g:which_key_map['c'] = [ 'gcc'                                 , 'comment'	    ]
-let g:which_key_map['f'] = [ ':Rg'                                 , 'ripgrep'	    ]
 let g:which_key_map['h'] = [ 'gT'                                  , 'tab right'    ]
 let g:which_key_map['l'] = [ 'gt'                                  , 'tab left'     ]
 let g:which_key_map['t'] = [ 'ITODO(jonathan):<ESC>gccf:a<Space>'  , 'todo'         ]
@@ -45,11 +44,14 @@ let g:which_key_map.g = {
       \ }
 
 " Misc
-" nmap     <leader>to ITODO(jonathan):<ESC>gccf:a<Space>
 nnoremap <leader>i :source $MYVIMRC<CR>
 let g:which_key_map.i = 'init nvim'
 
+nnoremap <leader>f :Rg<CR>
+let g:which_key_map.f = 'ripgrep'
 
+au filetype haskell nnoremap <silent> <leader>p :let a='{-# LANGUAGE  #-}'\|put! = a <cr> l11 <Insert>
+let g:which_key_map.p = 'add pragma'
 " Arrow Keys
 nnoremap <S-Up> :m-2<CR>
 nnoremap <S-Down> :m+<CR>

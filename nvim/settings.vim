@@ -8,6 +8,7 @@ set cursorline
 
 " Ranger
 let g:ranger_replace_netrw = 1 "open ranger when vim open a directory
+let g:ranger_map_keys = 0
 
 " Highlight 81st column
 highlight ColorColumn ctermbg=red
@@ -18,7 +19,6 @@ set expandtab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set smarttab
 set smartindent
 set autoindent
 
@@ -30,6 +30,24 @@ set backspace=indent,eol,start
 filetype plugin indent on
 
 " Plugins
+
+" FZF
+let g:fzf_colors =
+  \ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
+let g:fzf_action = { '\\': 'tab-split' }
 
 " Don't let plugins map leader bindings
 let g:no_plugin_maps = 1
