@@ -17,10 +17,11 @@ autocmd! FileType which_key
 autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
-let g:which_key_map['c'] = [ 'gcc'                                 , 'comment'	    ]
-let g:which_key_map['h'] = [ 'gT'                                  , 'tab right'    ]
-let g:which_key_map['l'] = [ 'gt'                                  , 'tab left'     ]
-let g:which_key_map['t'] = [ 'ITODO(jonathan):<ESC>gccf:a<Space>'  , 'todo'         ]
+let g:which_key_map['c'] = [ 'gcc'                                 , 'comment'	     ]
+let g:which_key_map['h'] = [ 'gT'                                  , 'tab right'     ]
+let g:which_key_map['l'] = [ 'gt'                                  , 'tab left'      ]
+let g:which_key_map['t'] = [ 'ITODO(jonathan):<ESC>gccf:a<Space>'  , 'todo'          ]
+let g:which_key_map['w'] = [ ':retab<CR>'                          , 'tabs -> spaces']
 
 
 let g:which_key_map.r = {

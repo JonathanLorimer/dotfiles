@@ -19,6 +19,7 @@ set expandtab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+set smarttab
 set smartindent
 set autoindent
 
@@ -47,7 +48,7 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-let g:fzf_action = { '\\': 'tab-split' }
+let g:fzf_action = { 'ctrl-t': 'tab-split' }
 
 " Don't let plugins map leader bindings
 let g:no_plugin_maps = 1

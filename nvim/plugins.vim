@@ -14,6 +14,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'scrooloose/syntastic'
 Plug 'arcticicestudio/nord-vim'
+Plug 'hardselius/warlock'
 Plug 'liuchengxu/vim-which-key'
 Plug 'majutsushi/tagbar'
 
