@@ -17,34 +17,47 @@ autocmd! FileType which_key
 autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
-let g:which_key_map['c'] = [ 'gcc'                                 , 'comment'	     ]
+let g:which_key_map['c'] = [ 'gcc'                                 , 'comment'       ]
 let g:which_key_map['h'] = [ 'gT'                                  , 'tab right'     ]
 let g:which_key_map['l'] = [ 'gt'                                  , 'tab left'      ]
-let g:which_key_map['t'] = [ 'ITODO(jonathan):<ESC>gccf:a<Space>'  , 'todo'          ]
 let g:which_key_map['w'] = [ ':retab<CR>'                          , 'tabs -> spaces']
 
 
 let g:which_key_map.r = {
-			\ 'name': '+ranger',
-      \ 't' : [':RangerNewTab' 	, 'new tab'],
-      \ 'f' : [':Ranger'    		, 'find'	 ],
+      \ 'name': '+ranger',
+      \ 't' : [':RangerNewTab'  , 'new tab'],
+      \ 'f' : [':Ranger'        , 'find'   ],
       \ }
 
 let g:which_key_map.z = {
-			\ 'name': '+fzf',
-      \ 't' : [':Tags' 		, 'tags'		],
-      \ 'f' : [':Files' 	, 'files'		],
-      \ 'b' : [':Buffers' , 'buffers'	],
+      \ 'name': '+fzf',
+      \ 't' : [':Tags'    , 'tags'    ],
+      \ 'f' : [':Files'   , 'files'   ],
+      \ 'b' : [':Buffers' , 'buffers' ],
       \ }
 
 let g:which_key_map.g = {
-			\ 'name': '+git',
-      \ 'j' : ['<plug>(signify-next-hunk)' 		, 'hunk down'	],
-      \ 'k' : ['<plug>(signify-prev-hunk)' 		, 'hunk up'		],
-      \ 'h' : [':SignifyToggleHighlight<CR>' 	, 'highlight'	],
+      \ 'name': '+git',
+      \ 'j' : ['<plug>(signify-next-hunk)'    , 'hunk down' ],
+      \ 'k' : ['<plug>(signify-prev-hunk)'    , 'hunk up'   ],
+      \ 'h' : [':SignifyToggleHighlight<CR>'  , 'highlight' ],
       \ }
 
+" let g:which_key_map.s = { 'name' : '+lsp' }
+
+" nnoremap <leader>sd :lua vim.lsp.buf.declaration()<CR>
+" let g:which_key_map.s.d = 'declaration'
+
+" nnoremap <leader>sf :lua vim.lsp.buf.definition()<CR>
+" let g:which_key_map.s.f = 'definition'
+
+" nnoremap <leader>sh :lua vim.lsp.buf.hover()<CR>
+" let g:which_key_map.s.h = 'hover'
+
 " Misc
+nnoremap <leader>t = ITODO(jonathan):<ESC>:Commentary<CR>f:a<Space>
+let g:which_key_map.t = 'todo'
+
 nnoremap <leader>i :source $MYVIMRC<CR>
 let g:which_key_map.i = 'init nvim'
 
@@ -78,9 +91,6 @@ inoremap <Right> <Nop>
 " nnoremap <leader>zt :Tags<CR>
 " nnoremap <leader>zf :Files<CR>
 " nnoremap <leader>zb :Buffers<CR>
-
-" Tagbar
-" nnoremap <leader>tg :TagbarToggle<CR>
 
 " SIgnify
 " nmap <leader>gj <plug>(signify-next-hunk)

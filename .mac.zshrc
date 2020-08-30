@@ -8,8 +8,9 @@ export ZSH="/Users/jonathanlorimer/.oh-my-zsh"
 export EDITOR=nvim
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
 # Set up direnv
-# eval "$(direnv hook zsh)"
+eval "$(direnv hook zsh)"
 
 # Source Nix
 . $HOME/.nix-profile/etc/profile.d/nix.sh
@@ -56,6 +57,9 @@ plugins=(
   zsh-syntax-highlighting
 )
 
+# Change iterm2 profile. Usage it2prof ProfileName (case sensitive)
+it2prof() { echo -e "\033]50;SetProfile=$1\a" }
+
 source $ZSH/oh-my-zsh.sh
 ZSH_HIGHLIGHT_STYLES[warnnestedvar]='none'
 #list
@@ -65,3 +69,6 @@ ZSH_HIGHLIGHT_STYLES[warnnestedvar]='none'
 # alias l='ls'
 # alias l.="ls -A | egrep '^\.'"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+alias zettel=~/dotfiles/zettel.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

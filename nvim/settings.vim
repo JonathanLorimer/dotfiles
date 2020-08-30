@@ -10,9 +10,6 @@ set cursorline
 let g:ranger_replace_netrw = 1 "open ranger when vim open a directory
 let g:ranger_map_keys = 0
 
-" Highlight 81st column
-highlight ColorColumn ctermbg=red
-call matchadd('ColorColumn', '\%81v', 100)
 
 " Tab Stuff
 set expandtab
@@ -66,3 +63,6 @@ let g:signify_sign_show_text = 1
 " FZF
 let g:fzg_buffers_jump = 1
 let g:fzf_tags_command = 'ctags -R'
+
+" LSP
+let g:lsp_diagnostics_echo_cursor = 1

@@ -24,6 +24,9 @@ setxkbmap -option caps:escape
 # Source Nix
 source ~/.nix-profile/etc/profile.d/nix.sh
 
+# Source util scripts
+source ~/dotfiles/zettel.sh
+
 # Fix manpath bug
 export LANG=en_CA.UTF-8
 export GDM_LANG=en_CA.UTF-8
