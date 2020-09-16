@@ -5,20 +5,14 @@ endif
 
 syntax enable
 set t_Co=256
-set noshowmode
-
-" Highlight 81st column
+set noshowmode " Highlight 81st column
 highlight ColorColumn ctermbg=red
 call matchadd('ColorColumn', '\%81v', 100)
 
-"Color Theme
-" colorscheme nord
-colorscheme monochrome
-set background=light
-
-
-
 "Airline Theme
+let g:airline_theme='nord_minimal'
+"
+let g:nord_uniform_diff_background = 0
 "
 " Enable extensions
 let g:airline_extensions = ['branch', 'hunks']
@@ -105,10 +99,17 @@ hi SignifySignAdd guifg=#99c794
 hi SignifySignDelete guifg=#ec5f67
 hi SignifySignChange guifg=#c594c5
 
-hi Normal ctermbg=NONE guibg=NONE
-hi NonText ctermbg=NONE guibg=NONE
-hi LineNr ctermfg=NONE guibg=NONE
-hi SignColumn ctermfg=NONE guibg=NONE
-hi StatusLine guifg=#16252b guibg=#FFFFFF
-hi StatusLineNC guifg=#FFFFFF guibg=#FFFFFF
-hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#FFFFFF guifg=#FFFFFF
+" hi Normal ctermbg=NONE guibg=NONE
+" hi NonText ctermbg=NONE guibg=NONE
+" hi LineNr ctermfg=NONE guibg=NONE
+" hi SignColumn ctermfg=NONE guibg=NONE
+" hi StatusLine guifg=#ECEFF4 guibg=#434C5E ctermbg=8 ctermfg=15
+" hi StatusLineNC guifg=#ECEFF4 guibg=#434C5E ctermbg=8 ctermfg=15
+" hi StatusLineTerm guifg=#ECEFF4 guibg=#434C5E ctermbg=8 ctermfg=15
+" hi StatusLineTermNC guifg=#ECEFF4 guibg=#434C5E ctermbg=8 ctermfg=15
+" hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+" hi StatusLineModified ctermbg=NONE ctermfg=NONE guibg=#FFFFFF guifg=NONE
+
+"Color Theme
+colorscheme nord
+" colorscheme monochrome

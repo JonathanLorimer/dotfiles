@@ -38,9 +38,13 @@ let g:which_key_map.z = {
 
 let g:which_key_map.g = {
       \ 'name': '+git',
-      \ 'j' : ['<plug>(signify-next-hunk)'    , 'hunk down' ],
-      \ 'k' : ['<plug>(signify-prev-hunk)'    , 'hunk up'   ],
-      \ 'h' : [':SignifyToggleHighlight<CR>'  , 'highlight' ],
+      \ 's' : [':G'                           , 'status'     ],
+      \ 'e' : [':diffget //2'                 , 'take left'  ],
+      \ 'i' : [':diffget //3'                 , 'take right' ],
+      \ 'c' : [':Gcommit'                     , 'commit'     ],
+      \ 'j' : ['<plug>(signify-next-hunk)'    , 'hunk down'  ],
+      \ 'k' : ['<plug>(signify-prev-hunk)'    , 'hunk up'    ],
+      \ 'h' : [':SignifyToggleHighlight<CR>'  , 'highlight'  ],
       \ }
 
 " let g:which_key_map.s = { 'name' : '+lsp' }
